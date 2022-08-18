@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply px-5 max-w-[1300px] mx-auto;
+  }
+
+  .why_description {
+    @apply max-w-[509px] text-[14px] leading-[200%] text-[#FFFAF2] tracking-[0.09em] font-extralight;
+  }
+  .why_title {
+    color: #e8ccc8;
+    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #e8ccc8;
+    @apply text-[96px] leading-[144px] font-bold mb-2;
+  }
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+.reversed_text {
+  @apply text-[48px] tracking-[0.05em] leading-[48px] font-extrabold -mt-[14px];
+  background: linear-gradient(
+    180deg,
+    rgba(165, 173, 183, 0) 0%,
+    rgba(116, 132, 99, 0.48) 119.12%,
+    rgba(165, 173, 183, 0.77) 119.12%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
